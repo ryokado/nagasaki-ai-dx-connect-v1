@@ -1289,6 +1289,85 @@
       }
     }
 
+    /* ===== Track Record ===== */
+    .track-record {
+      padding: 120px 0;
+      position: relative;
+    }
+
+    .track-record-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .track-record-header .section-lead {
+      margin: 0 auto;
+    }
+
+    .track-record-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .track-record-card {
+      padding: 32px 24px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 20px;
+      transition: border-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .track-record-card:hover {
+      border-color: rgba(233, 106, 151, 0.2);
+      transform: translateY(-4px);
+    }
+
+    .track-record-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      padding: 4px 12px;
+      border-radius: 100px;
+      margin-bottom: 16px;
+      color: #E96A97;
+      background: rgba(233, 106, 151, 0.1);
+      border: 1px solid rgba(233, 106, 151, 0.2);
+    }
+
+    .track-record-company {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .track-record-desc {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.4);
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    .track-record-result {
+      font-size: 0.8rem;
+      color: #E96A97;
+      font-weight: 500;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    @media (max-width: 768px) {
+      .track-record {
+        padding: 80px 0;
+      }
+
+      .track-record-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
     /* ===== Organizers ===== */
     .organizers {
       padding: 80px 0;
@@ -1387,6 +1466,7 @@
       <nav class="header-nav" id="headerNav">
         <a href="#about">About</a>
         <a href="#speakers">Speakers</a>
+        <a href="#track-record">Track Record</a>
         <a href="#program">Program</a>
         <a href="#outline">Outline</a>
         <a href="#entry" class="btn-nav">参加申込</a>
@@ -1521,6 +1601,38 @@
           <h3 class="speaker-name">ABABA</h3>
           <p class="speaker-company">株式会社ABABA</p>
           <p class="speaker-desc">就職活動の「過程」を評価するHRTechスタートアップ。最終面接まで進んだ就活生に他企業からスカウトが届く新卒採用プラットフォームを運営。AI面接サービス「REALME」も展開。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Track Record (マッチング実績) ===== -->
+  <section class="track-record" id="track-record">
+    <div class="container">
+      <div class="track-record-header fade-up">
+        <span class="section-label">Track Record</span>
+        <h2 class="section-title">F Venturesのマッチング実績</h2>
+        <p class="section-lead">これまでF Venturesは都内のAI/DXスタートアップを福岡の地元経営者にマッチングし、多くの事業連携を実現してきました。</p>
+      </div>
+
+      <div class="track-record-grid">
+        <div class="track-record-card fade-up">
+          <span class="track-record-tag">WorkTech × 地方企業</span>
+          <h3 class="track-record-company">株式会社タイミー</h3>
+          <p class="track-record-desc">スキマバイトマッチングサービス「タイミー」を福岡の地元企業に紹介。飲食・小売・物流など幅広い業種で人手不足の課題解決に貢献し、福岡エリアでの導入企業拡大を支援。</p>
+          <p class="track-record-result">福岡エリアの地元企業への導入・マッチングを推進</p>
+        </div>
+        <div class="track-record-card fade-up">
+          <span class="track-record-tag">AI Chat × 地方企業</span>
+          <h3 class="track-record-company">株式会社ZEALS（ジールス）</h3>
+          <p class="track-record-desc">AIチャットコマースによる接客DXを福岡の地元企業へ展開。LINEを活用した顧客コミュニケーションの自動化・最適化により、地方企業のデジタル接客導入を推進。</p>
+          <p class="track-record-result">福岡の地元経営者とのマッチング・事業連携を実現</p>
+        </div>
+        <div class="track-record-card fade-up">
+          <span class="track-record-tag">HRTech × 地方企業</span>
+          <h3 class="track-record-company">株式会社ABABA</h3>
+          <p class="track-record-desc">新卒採用プラットフォーム「ABABA」を福岡の地元企業へ紹介。就活の過程を評価する独自の仕組みにより、地方企業の採用力強化と優秀な学生のマッチングを支援。</p>
+          <p class="track-record-result">福岡エリアの企業採用DX推進に貢献</p>
         </div>
       </div>
     </div>
