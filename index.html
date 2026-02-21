@@ -179,9 +179,9 @@
       overflow: hidden;
     }
 
-    /* AI背景文字 */
-    .hero-bg-text {
-      position: absolute;
+    /* AI背景文字（固定表示） */
+    .bg-text-fixed {
+      position: fixed;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -190,7 +190,7 @@
       font-weight: 900;
       letter-spacing: -0.05em;
       color: transparent;
-      background: linear-gradient(180deg, rgba(233, 106, 151, 0.07) 0%, rgba(233, 106, 151, 0.02) 100%);
+      background: linear-gradient(180deg, rgba(233, 106, 151, 0.15) 0%, rgba(233, 106, 151, 0.06) 100%);
       -webkit-background-clip: text;
       background-clip: text;
       pointer-events: none;
@@ -1164,6 +1164,9 @@
 </head>
 <body>
 
+  <!-- AI背景文字（固定） -->
+  <div class="bg-text-fixed" aria-hidden="true">AI</div>
+
   <!-- ===== Header ===== -->
   <header class="header" id="header">
     <div class="header-inner">
@@ -1185,7 +1188,6 @@
 
   <!-- ===== Hero ===== -->
   <section class="hero" id="hero">
-    <div class="hero-bg-text" aria-hidden="true">AI</div>
     <div class="hero-orb hero-orb-1"></div>
     <div class="hero-orb hero-orb-2"></div>
     <div class="hero-orb hero-orb-3"></div>
