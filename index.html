@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NAGASAKI AI/DX CONNECT 2026</title>
   <meta name="description" content="AI/DXスタートアップと長崎の地元企業をつなぐマッチングイベント。2026年7月開催。">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -176,6 +177,27 @@
       text-align: center;
       padding: 140px 32px 100px;
       overflow: hidden;
+    }
+
+    /* AI背景文字 */
+    .hero-bg-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(20rem, 45vw, 40rem);
+      font-weight: 900;
+      letter-spacing: -0.05em;
+      color: transparent;
+      background: linear-gradient(180deg, rgba(233, 106, 151, 0.07) 0%, rgba(233, 106, 151, 0.02) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      pointer-events: none;
+      user-select: none;
+      z-index: 0;
+      line-height: 1;
+      white-space: nowrap;
     }
 
     /* ピンクグラデーションのオーブ装飾 */
@@ -1163,6 +1185,7 @@
 
   <!-- ===== Hero ===== -->
   <section class="hero" id="hero">
+    <div class="hero-bg-text" aria-hidden="true">AI</div>
     <div class="hero-orb hero-orb-1"></div>
     <div class="hero-orb hero-orb-2"></div>
     <div class="hero-orb hero-orb-3"></div>
